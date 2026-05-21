@@ -19,7 +19,7 @@ import os from "os";
 
 const DEBUG     = process.env.DEBUG === "true" || process.env.DEBUG === "1";
 const DEBUG_DIR = process.env.DEBUG_DIR || "./debug";
-const SERA_BASE_URL = (process.env.SERA_MRQUIK_BASE_URL || "https://misterquik.sera.tech").replace(/\/+$/, "");
+const SERA_BASE_URL = ("https://misterquik.sera.tech").replace(/\/+$/, "");
 
 // =============================================================================
 // PAGE HELPERS
@@ -403,8 +403,8 @@ export async function runSeraAttachVideo(input: any) {
 
   // ---- 2. Build the step plan and run the browser flow ----
   const I = {
-    stratablueEmail:    process.env.STRATABLUE_MRQUIK_EMAIL    || "mcc@stratablue.com",
-    stratabluePassword: process.env.STRATABLUE_MRQUIK_PASSWORD || "",
+    stratablueEmail:    process.env.SERA_EMAIL    || "mcc@stratablue.com",
+    stratabluePassword: process.env.SERA_PASSWORD || "",
     jobId,
     appointmentId,
     fileName,

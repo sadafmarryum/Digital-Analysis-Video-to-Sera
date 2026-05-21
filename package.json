@@ -1,11 +1,11 @@
 {
-  "name": "sera-attach-video",
+  "name": "sera-attach-video-module",
   "version": "1.0.0",
   "description": "Browserbase + Stagehand server for video upload",
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/sera-attach-video.js"
+    "start": "node dist/sera-attach-video-module.js"
   },
   "dependencies": {
     "@browserbasehq/stagehand": "latest",
